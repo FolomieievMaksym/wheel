@@ -1,0 +1,745 @@
+.home {
+}
+.wrapper {
+}
+.hero {
+   // .hero__container
+   &__container {
+      img {
+         // max-width: 12%;
+      }
+   }
+}
+.ring {
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   // &:after {
+   //    // content: "";
+   //    position: absolute;
+   //    z-index: 1;
+   //    top: 50%;
+   //    left: 50%;
+   //    transform: translate(-50%, -50%);
+   //    width: 100vw;
+   //    height: 1px;
+   //    background: black;
+   // }
+   // &:before {
+   //    // content: "";
+   //    position: absolute;
+   //    z-index: 1;
+   //    top: 50%;
+   //    left: 50%;
+   //    transform: translate(-50%, -50%);
+   //    width: 1px;
+   //    height: 100vh;
+   //    background: black;
+   // }
+   &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      height: 0;
+      border: 0 solid transparent;
+      border-right-width: 3vmax;
+      border-left-width: 3vmax;
+      border-bottom: 100vmax solid rgba(25, 230, 18, 0.6);
+   }
+   &__button {
+      cursor: pointer !important;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: lime;
+      position: absolute;
+      z-index: 1;
+      top: 20px;
+      left: 20px;
+   }
+
+   &__lines {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      span {
+         display: inline-block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         z-index: 1;
+         width: 100vw;
+         height: 1px;
+         // background-color: rgba(0, 0, 0, 0.4);
+         // 10 pieces
+         // &:nth-child(1) {
+         //    transform: translate(-50%, -50%) rotate(90deg);
+         // }
+         // &:nth-child(2) {
+         //    transform: translate(-50%, -50%) rotate(54deg);
+         // }
+         // &:nth-child(3) {
+         //    transform: translate(-50%, -50%) rotate(18deg);
+         // }
+         // &:nth-child(4) {
+         //    transform: translate(-50%, -50%) rotate(-18deg);
+         // }
+         // &:nth-child(5) {
+         //    transform: translate(-50%, -50%) rotate(-54deg);
+         // }
+         // 8 pieces
+         // &:nth-child(1) {
+         //    transform: translate(-50%, -50%) rotate(90deg);
+         // }
+         // &:nth-child(2) {
+         //    transform: translate(-50%, -50%) rotate(45deg);
+         // }
+         // &:nth-child(3) {
+         //    transform: translate(-50%, -50%) rotate(0deg);
+         // }
+         // &:nth-child(4) {
+         //    transform: translate(-50%, -50%) rotate(-45deg);
+         // }
+         // 6 pieces
+         &:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(90deg);
+         }
+         &:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(30deg);
+         }
+         &:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(-30deg);
+         }
+      }
+   }
+   // .ring__wrapper
+
+   &__wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      overflow: hidden;
+      &:nth-child(odd) {
+         background-color: rgb(0, 225, 255);
+      }
+      &:nth-child(even) {
+         background-color: rgb(212, 255, 0);
+      }
+      .ring__image {
+         &:after,
+         &:before {
+            position: absolute;
+            top: 50%;
+            width: 2px;
+            height: 300vmax;
+            background: #000;
+         }
+      }
+      // .ring__wrapper_1
+      &_1 {
+         // 518.688px
+         width: 95vmin;
+         height: 95vmin;
+         .ring__image {
+            &:after {
+               left: -72px; // left = 360 / ( amount / 2 )
+               left: -13.2vmin;
+               transform: translateY(-50%) rotate(-18deg); // rotate = 360 / ( amount * 2 )
+            }
+            &:before {
+               right: -72px; // right = 360 / ( amount / 2 )
+               right: -13.2vmin;
+               transform: translateY(-50%) rotate(18deg); // rotate = 360 / ( amount * 2 )
+            }
+            &_1 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_2 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_3 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_4 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_5 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+         }
+      }
+      &_2 {
+         // 480.469px
+         width: 88vmin;
+         height: 88vmin;
+         .ring__image {
+            &:after {
+               left: -12.2vmin;
+               transform: translateY(-50%) rotate(-18deg);
+            }
+            &:before {
+               right: -12.1vmin;
+               transform: translateY(-50%) rotate(18deg);
+            }
+            &_1 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_2 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_3 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_4 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_5 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+         }
+      }
+      &_1,
+      &_2 {
+         .ring__image {
+            &_2 {
+               top: percent(64, 701);
+               left: percent(537, 701);
+               transform: rotate(36deg);
+            }
+            &_3 {
+               top: percent(233, 701);
+               left: percent(658, 701);
+               transform: rotate(72deg);
+            }
+            &_4 {
+               top: percent(441, 701);
+               left: percent(657, 701);
+               transform: rotate(108deg);
+            }
+            &_5 {
+               top: percent(609, 701);
+               left: percent(535, 701);
+               transform: rotate(144deg);
+            }
+            &_6 {
+               top: 100%;
+               left: 50%;
+               transform: translate(-50%, -100%) rotate(180deg);
+            }
+            &_7 {
+               top: percent(610, 701);
+               left: percent(139, 701);
+               transform: rotate(216deg);
+            }
+            &_8 {
+               top: percent(442, 701);
+               left: percent(16, 701);
+               transform: rotate(252deg);
+            }
+            &_9 {
+               top: percent(233, 701);
+               left: percent(16, 701);
+               transform: rotate(288deg);
+            }
+            &_10 {
+               top: percent(64, 701);
+               left: percent(139, 701);
+               transform: rotate(324deg);
+            }
+         }
+      }
+      &_3 {
+         // 442.250px
+         width: 81vmin;
+         height: 81vmin;
+         .ring__image {
+            &:after {
+               left: -14.35vmin;
+               transform: translateY(-50%) rotate(-22.5deg);
+            }
+            &:before {
+               right: -14.35vmin;
+               transform: translateY(-50%) rotate(22.5deg);
+            }
+            &_1 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_2 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_3 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_4 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+         }
+      }
+      &_4 {
+         // 404.03px
+         width: 74vmin;
+         height: 74vmin;
+         .ring__image {
+            &:after {
+               left: -13.1vmin;
+               transform: translateY(-50%) rotate(-22.5deg);
+            }
+            &:before {
+               right: -13.1vmin;
+               transform: translateY(-50%) rotate(22.5deg);
+            }
+            &_1 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_2 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_3 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_4 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+         }
+      }
+      &_3,
+      &_4 {
+         .ring__image {
+            &_2 {
+               top: percent(83, 598);
+               left: percent(489, 598);
+               transform: rotate(45deg);
+            }
+            &_3 {
+               top: percent(286, 598);
+               left: percent(572, 598);
+               transform: rotate(90deg);
+            }
+            &_4 {
+               top: percent(488, 598);
+               left: percent(488, 598);
+               transform: rotate(135deg);
+            }
+            &_5 {
+               top: 100%;
+               left: 50%;
+               transform: translate(-50%, -100%) rotate(180deg);
+            }
+            &_6 {
+               top: percent(488, 598);
+               left: percent(83, 598);
+               transform: rotate(225deg);
+            }
+            &_7 {
+               top: percent(286, 598);
+               left: percent(0, 598);
+               transform: rotate(270deg);
+            }
+            &_8 {
+               top: percent(84, 598);
+               left: percent(82, 598);
+               transform: rotate(315deg);
+            }
+         }
+      }
+      &_5 {
+         // 365.81px
+         width: 67vmin;
+         height: 67vmin;
+         .ring__image {
+            &:after {
+               left: -16.6vmin;
+            }
+            &:before {
+               right: -16.6vmin;
+            }
+            &_2 {
+               top: percent(86, 366);
+               left: percent(323, 366);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(260, 366);
+               left: percent(324, 366);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(261, 366);
+               left: percent(22, 366);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(87, 366);
+               left: percent(22, 366);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_6 {
+         // 327.59px
+         width: 60vmin;
+         height: 60vmin;
+         .ring__image {
+            &:after {
+               left: -14.6vmin;
+            }
+            &:before {
+               right: -14.6vmin;
+            }
+            &_2 {
+               top: percent(77, 327.59);
+               left: percent(288, 327.59);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(231, 327.59);
+               left: percent(288, 327.59);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(232, 327.59);
+               left: percent(20, 327.59);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(77, 327.59);
+               left: percent(20, 327.59);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_7 {
+         // 289.38px
+         width: 53vmin;
+         height: 53vmin;
+         .ring__image {
+            &:after {
+               left: -12.7vmin;
+            }
+            &:before {
+               right: -12.7vmin;
+            }
+            &_2 {
+               top: percent(67.5, 289.38);
+               left: percent(253, 289.38);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(203, 289.38);
+               left: percent(253, 289.38);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(204, 289.38);
+               left: percent(17.5, 289.38);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(67.6, 289.38);
+               left: percent(17.5, 289.38);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_8 {
+         // 251.16px
+         width: 46vmin;
+         height: 46vmin;
+         .ring__image {
+            &:after {
+               left: -10.75vmin;
+            }
+            &:before {
+               right: -10.75vmin;
+            }
+            &_2 {
+               top: percent(57, 251.16);
+               left: percent(218, 251.16);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(175, 251.16);
+               left: percent(218, 251.16);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(176, 251.16);
+               left: percent(15, 251.16);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(58, 251.16);
+               left: percent(15, 251.16);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_9 {
+         // 212.94px
+         width: 39vmin;
+         height: 39vmin;
+         .ring__image {
+            &:after {
+               left: -8.6vmin;
+            }
+            &:before {
+               right: -8.6vmin;
+            }
+            &_2 {
+               top: percent(48, 212.94);
+               left: percent(181, 212.94);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(146, 212.94);
+               left: percent(182, 212.94);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(147, 212.94);
+               left: percent(12.5, 212.94);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(48.4, 212.94);
+               left: percent(12.5, 212.94);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_10 {
+         // 174.72px
+         width: 32vmin;
+         height: 32vmin;
+         .ring__image {
+            &:after {
+               left: -6.6vmin;
+            }
+            &:before {
+               right: -6.6vmin;
+            }
+            &_2 {
+               top: percent(39, 174.72);
+               left: percent(146, 174.72);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(118, 174.72);
+               left: percent(147, 174.72);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(119, 174.72);
+               left: percent(10.1, 174.72);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(39.2, 174.72);
+               left: percent(10.1, 174.72);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_11 {
+         // 136.5px
+         background-color: red !important;
+         width: 25vmin;
+         height: 25vmin;
+         .ring__image {
+            &:after {
+               left: -4.5vmin;
+            }
+            &:before {
+               right: -4.5vmin;
+            }
+            &_2 {
+               top: percent(29, 136.5);
+               left: percent(110, 136.5);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(88.5, 136.5);
+               left: percent(110, 136.5);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(89, 136.5);
+               left: percent(7.5, 136.5);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(29.4, 136.5);
+               left: percent(7.5, 136.5);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_12 {
+         // 98.27px
+         width: 18vmin;
+         height: 18vmin;
+         .ring__image {
+            &:after {
+               left: -2.6vmin;
+            }
+            &:before {
+               right: -2.6vmin;
+            }
+            &_2 {
+               top: percent(20, 98.27);
+               left: percent(75, 98.27);
+               transform: rotate(60deg);
+            }
+            &_3 {
+               top: percent(60.5, 98.27);
+               left: percent(75.3, 98.27);
+               transform: rotate(120deg);
+            }
+            &_5 {
+               top: percent(60, 98.27);
+               left: percent(5, 98.27);
+               transform: rotate(240deg);
+            }
+            &_6 {
+               top: percent(20.1, 98.27);
+               left: percent(5.13, 98.27);
+               transform: rotate(300deg);
+            }
+         }
+      }
+      &_13 {
+         width: 11vmin;
+         height: 11vmin;
+         background-color: #000 !important;
+         z-index: 10;
+      }
+      &_5,
+      &_6,
+      &_7,
+      &_8,
+      &_9,
+      &_10,
+      &_11,
+      &_12 {
+         .ring__image_4 {
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(180deg);
+         }
+         .ring__image {
+            &:after {
+               transform: translateY(-50%) rotate(-30deg);
+            }
+            &:before {
+               transform: translateY(-50%) rotate(30deg);
+            }
+            &_1 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_2 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+            &_3 {
+               &:after,
+               &:before {
+                  content: "";
+               }
+            }
+         }
+      }
+   }
+   &__image {
+      width: 3.5vmin;
+      height: 3.5vmin;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 90%;
+         height: 90%;
+         object-fit: cover;
+         object-position: center;
+      }
+      // .ring__image_1
+      &_1 {
+         top: 0;
+         left: 50%;
+         transform: translate(-50%, 0);
+      }
+   }
+}
